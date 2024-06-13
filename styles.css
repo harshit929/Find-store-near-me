@@ -1,0 +1,49 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #7eaecc;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header input, header select, header button {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+#map {
+    flex: 1;
+}
+
+#store-details {
+    width: 300px;
+    background: white;
+    padding: 10px;
+    overflow-y: auto;
+    border-left: 1px solid #ddd;
+}
+
+.store {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.store h3 {
+    margin: 0;
+}
+
+.store p {
+    margin: 5px 0;
+}

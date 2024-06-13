@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Locator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0wv0BFa6vgrKIOBGzxNujr3X2AnSpC_Y&callback=initMap" async defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Find a Store</h1>
+        <input type="text" id="location-input" placeholder="Enter a location">
+        <select id="radius">
+            <option value="5">5 Kms</option>
+            <option value="10">10 Kms</option>
+            <option value="20">20 Kms</option>
+        </select>
+        <select id="store-type">
+            <option value="all">All</option>
+            <option value="smart">SMART</option>
+            <option value="digital">Digital</option>
+            <option value="trends">Trends</option>
+            <!-- Add more options as needed -->
+        </select>
+        <button onclick="searchStores()">Search</button>
+    </header>
+    <div id="map"></div>
+    <aside id="store-details">
+        <h2>Store Details</h2>
+        <!-- Store details will be populated here -->
+         
+    </aside>
+</body>
+</html>
+
